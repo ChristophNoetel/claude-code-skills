@@ -1,6 +1,6 @@
 # Claude Code Skills
 
-A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills for developer productivity. These are patterns I use daily for capturing information, logging wins, cleaning up scratch directories, and more.
+A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills for developer productivity. These are patterns I use daily for capturing information, logging wins, managing todos, triaging Jira tickets, and more.
 
 ## What are Claude Code skills?
 
@@ -17,6 +17,8 @@ Skills live in `~/.claude/skills/` (global) or `.claude/skills/` (per-project). 
 | [capture](skills/capture.md) | Extract action items, decisions, and deadlines from pasted text and route them to structured files | Medium |
 | [log-win](skills/log-win.md) | Quick-capture wins and achievements to a structured JSONL log with auto-categorization | Simple |
 | [cleanup-scratch](skills/cleanup-scratch.md) | Scan a scratch directory for stale files, categorize, report, and delete with confirmation | Simple |
+| [todo](skills/todo.md) | Manage todos in a structured directory with done-folder workflow -- list, add, check off, and archive | Simple |
+| [ticket-triage](skills/ticket-triage.md) | Pull assigned Jira tickets, categorize by priority, detect stuck work, and recommend next action | Medium |
 
 ## Installation
 
@@ -30,7 +32,7 @@ cp skills/capture.md ~/.claude/skills/
 cp skills/capture.md .claude/skills/
 ```
 
-Then invoke with `/capture`, `/log-win`, or `/cleanup-scratch` in Claude Code.
+Then invoke with `/capture`, `/log-win`, `/cleanup-scratch`, `/todo`, or `/ticket-triage` in Claude Code.
 
 ## Anatomy of a skill
 
