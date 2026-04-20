@@ -1,0 +1,25 @@
+name: Repo Visualizer
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@0.9.1
+        with:
+          output_file: diagram.svg
+          excluded_paths: .github
+
+      - name: Commit diagram
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update repo visualization"
+          file_pattern: diagram.svg

@@ -1,5 +1,7 @@
 # Claude Code Skills
 
+![Visualization of the codebase](./diagram.svg)
+
 A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills for developer productivity. These are patterns I use daily for capturing information, logging wins, managing todos, triaging Jira tickets, and more.
 
 ## Why skills are like magic ✨
