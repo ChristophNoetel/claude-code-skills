@@ -26,6 +26,7 @@ Skills live in `~/.claude/skills/` (global) or `.claude/skills/` (per-project). 
 | [todo](skills/todo.md) | Manage todos in a structured directory with done-folder workflow -- list, add, check off, and archive | Simple |
 | [ticket-triage](skills/ticket-triage.md) | Pull assigned Jira tickets, categorize by priority, detect stuck work, and recommend next action | Medium |
 | [simplify](skills/simplify.md) | Review changed code for reuse, quality, and efficiency -- structured refactoring without changing behavior | Simple |
+| [pr-shepherd](skills/pr-shepherd.md) | Track open PRs, flag stale reviews, categorize by urgency, and generate nudge messages | Medium |
 
 ## Also in this repo
 
@@ -47,7 +48,7 @@ cp skills/capture.md ~/.claude/skills/
 cp skills/capture.md .claude/skills/
 ```
 
-Then invoke with `/capture`, `/log-win`, `/cleanup-scratch`, `/todo`, `/ticket-triage`, or `/simplify` in Claude Code.
+Then invoke with `/capture`, `/log-win`, `/cleanup-scratch`, `/todo`, `/ticket-triage`, `/simplify`, or `/pr-shepherd` in Claude Code.
 
 ## Anatomy of a skill
 
