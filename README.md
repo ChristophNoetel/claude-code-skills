@@ -27,6 +27,14 @@ Skills live in `~/.claude/skills/` (global) or `.claude/skills/` (per-project). 
 | [ticket-triage](skills/ticket-triage.md) | Pull assigned Jira tickets, categorize by priority, detect stuck work, and recommend next action | Medium |
 | [simplify](skills/simplify.md) | Review changed code for reuse, quality, and efficiency -- structured refactoring without changing behavior | Simple |
 
+## Also in this repo
+
+| Guide | Description |
+|-------|-------------|
+| [memory-system](memory-system/) | Give Claude Code persistent memory across sessions -- preferences, corrections, and project context that survive when you close the terminal |
+
+The memory system guide has its own setup instructions -- see its [README](memory-system/) for details.
+
 ## Installation
 
 Copy any skill file into your Claude Code skills directory:
