@@ -1,12 +1,11 @@
 # How Claude Never Forgets
 
-Every Claude Code session starts from scratch. The project context you explained yesterday? Gone. The preference you corrected three times? Forgotten. The teammate's name and role you mentioned last week? Never happened.
-
+Every Claude Code session starts from scratch. The project context you explained yesterday? Gone. The preference you corrected three times? Forgotten.
 This guide shows you how to give Claude Code a persistent memory that survives across sessions -- so corrections stick, context accumulates, and Claude gets better at working with you over time.
 
 ## The problem
 
-Without persistent memory, you're training Claude from zero every session. You repeat the same corrections ("don't mock the database", "use snake_case for this project", "I'm the backend engineer, not the PM"). You re-explain project context that took 10 minutes the first time. There's no learning curve -- Claude makes the same mistakes in session 100 that it made in session 1.
+Without persistent memory, you're training Claude from zero every session. You repeat the same corrections ("don't mock the database", "use snake_case for this project", "I'm the backend engineer, not the PM"). You re-explain the project context that took 10 minutes the first time. There's no learning curve -- Claude makes the same mistakes in session 100 that it made in session 1.
 
 ## The solution: file-based memory
 
@@ -71,7 +70,7 @@ the test database container. Only mock external HTTP services.
 
 **When to save:** Any time you correct Claude's approach ("don't do that") OR confirm a non-obvious approach worked ("yes, exactly like that").
 
-The `Why` and `How to apply` lines are critical. Without them, Claude follows the rule blindly. With them, it can judge edge cases.
+The `Why` and `How to apply` lines are critical. Without them, Claude blindly follows the rule. With them, it can judge edge cases.
 
 ### Project memories
 
@@ -87,7 +86,7 @@ type: project
 Migrating the public REST API from v1 to v2. Target: end of Q3.
 
 **Why:** v1 has inconsistent error formats. Three enterprise customers
-escalated. Product committed to the fix in Q2.
+escalated. Product is committed to the fix in Q2.
 
 **How to apply:** New endpoints use v2 patterns. Don't add features to v1.
 ```
